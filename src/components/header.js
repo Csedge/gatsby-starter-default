@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
       justifyContent: `space-between`,
     }}>
   <Container>
-    <Navbar.Brand href="#home"> {siteTitle}</Navbar.Brand>
+    <Navbar.Brand href="/"> {siteTitle}</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
