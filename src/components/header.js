@@ -27,8 +27,8 @@ const Header = ({ siteTitle }) => (
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
         <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link href="page-2">Page 2</Nav.Link>
-        <Nav.Link href="using-typescript">Go to using Typescript</Nav.Link>
+        <Nav.Link href="/page-2">Page 2</Nav.Link>
+        <Nav.Link href="/using-typescript">Go to using Typescript</Nav.Link>
 
       </Nav>
     </Navbar.Collapse>
