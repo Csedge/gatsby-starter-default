@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
+import { Button, Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
+import { Row, Container } from "reactstrap"
 const links = [
   {
     text: "Tutorial",
@@ -72,6 +74,9 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
+ 
+
+
     <div className={styles.textCenter}>
       <StaticImage
         src="../images/example.png"

@@ -8,9 +8,11 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { Button, Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
+import { Row, Container } from "reactstrap"
 import Header from "./header"
 import "./layout.css"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,6 +28,14 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <nav        style={{
+          margin: `0 auto`,
+          maxWidth: `var(--size-content)`,
+          padding: `var(--size-gutter)`,
+        }}>
+
+      </nav>
+
       <div
         style={{
           margin: `0 auto`,
@@ -33,6 +43,7 @@ const Layout = ({ children }) => {
           padding: `var(--size-gutter)`,
         }}
       >
+
         <main>{children}</main>
         <footer
           style={{
